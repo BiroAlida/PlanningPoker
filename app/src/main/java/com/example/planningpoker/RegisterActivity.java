@@ -54,7 +54,7 @@ public class RegisterActivity extends AppCompatActivity {
             User user = new User (id,name,email,password,type);
 
             databaseUsers.child(id).setValue(user); // a setValue-t hasznaljuk a user firebase adatbazisban valo tarolasara
-                                                    // a usert az id-jan belul taroljuk amit egyedien generalunk
+            // a usert az id-jan belul taroljuk amit egyedien generalunk
 
 
             Toast.makeText(this,"User added", Toast.LENGTH_LONG).show();
